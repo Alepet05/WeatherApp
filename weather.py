@@ -2,7 +2,7 @@
 
 from typing import NamedTuple, Literal
 from datetime import datetime
-from enum import Enum
+from enum import StrEnum
 import requests
 from requests.exceptions import RequestException
 import json
@@ -17,7 +17,7 @@ Celsius = int
 Percent = int
 
 
-class WeatherType(str, Enum):
+class WeatherType(StrEnum):
     THUNDERSTORM = "Гроза"
     DRIZZLE = "Изморось"
     RAIN = "Дождь"
