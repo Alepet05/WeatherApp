@@ -1,8 +1,13 @@
 class CantGetCoordinates(Exception):
-    '''Не можем получить текуще GPS координаты'''
+    '''Не смогли получить текущие GPS координаты'''
     pass
 
 
 class ApiServiceError(Exception):
-    '''Не удалось установить соединение'''
+    '''Не смогли получить погоду от API сервиса погоды'''
+    pass
+
+
+class WeatherStorageError(Exception):
+    '''Не смогли сохранить погоду в хранилище'''
     pass
